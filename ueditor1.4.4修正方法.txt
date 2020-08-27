@@ -1,0 +1,3 @@
+1.lib包引入                根目录创建 WEB-INF/LIB/  引入tomcat的servlet等包
+2.ueditor.config.js更改    打开ueditor.config.js，配置  serverUrl: URL + "jsp/controller.jsp" 更换后台
+3.jsp的controller          controller会报错，需要把最后一行更换成 response.getWriter().write( new ActionEnter( request, rootPath ).exec() );        
